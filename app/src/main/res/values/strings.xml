@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">QAHelper</string>
+
+    <!-- Main activity -->
+    <string name="main_activity_open_gallery">Open gallery</string>
+</resources>
