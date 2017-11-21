@@ -47,18 +47,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        try {
 
-            if (requestCode == GALLERY_PICK && resultCode == RESULT_OK
-                    && null != data && null != data.getData()) {
+        if (requestCode == GALLERY_PICK && resultCode == RESULT_OK
+                && null != data && null != data.getData()) {
 
-                Uri URI = data.getData();
-                dialogSendImg();
+            Uri URI = data.getData();
+            dialogSendImg();
 
-            }
-        } catch (Exception e) {
-            Toast.makeText(this, "Please try again", Toast.LENGTH_LONG)
-                    .show();
         }
 
     }
