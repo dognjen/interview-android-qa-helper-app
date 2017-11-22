@@ -127,13 +127,10 @@ public class MainActivity extends AppCompatActivity {
         sb.append("Dp height: ");
         sb.append(dm.heightPixels/dm.density + " " + dm.ydpi);
         sb.append('\n');
-        sb.append("Inches width: ");
-        sb.append(x);
+        sb.append("Screen inches: ");
+        sb.append(Math.sqrt(x+y));
         sb.append('\n');
-        sb.append("Inches height: ");
-        sb.append(y);
-        sb.append('\n');
-        sb.append("Density: ");
+        sb.append("Screen density: ");
         sb.append(dm.density);
 
         return sb.toString();
